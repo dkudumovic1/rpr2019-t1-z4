@@ -7,7 +7,7 @@ public class Korpa {
 
     public boolean dodajArtikl(Artikl a) {
         if(brojArtikala+1<=50) {
-            artikli[brojArtikala-1]=new Artikl(a);
+            artikli[brojArtikala]=new Artikl(a);
             brojArtikala++;
             return true;
         }
