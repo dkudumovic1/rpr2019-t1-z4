@@ -2,13 +2,19 @@ package ba.unsa.etf.rpr;
 
 public class Artikl {
     private String naziv;
-    private double cijena;
+    private int cijena;
     private String kod;
 
-    public Artikl(String naziv, double cijena, String kod) {
+    public Artikl(String naziv, int cijena, String kod) {
         this.naziv = naziv;
         this.cijena = cijena;
         this.kod = kod;
+    }
+
+    public Artikl(Artikl a) {
+        this.naziv=a.getNaziv();
+        this.cijena=a.getCijena();
+        this.kod=a.getKod();
     }
 
     public String getNaziv() {
@@ -19,11 +25,11 @@ public class Artikl {
         this.naziv = naziv;
     }
 
-    public double getCijena() {
+    public int getCijena() {
         return cijena;
     }
 
-    public void setCijena(double cijena) {
+    public void setCijena(int cijena) {
         this.cijena = cijena;
     }
 
