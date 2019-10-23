@@ -5,6 +5,10 @@ public class Korpa {
     Artikl [] artikli=new Artikl[50];
 
 
+    public int getBrojArtikala() {
+        return brojArtikala;
+    }
+
     public boolean dodajArtikl(Artikl a) {
         if(brojArtikala+1<=50) {
             artikli[brojArtikala]=new Artikl(a);

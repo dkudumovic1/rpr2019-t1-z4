@@ -29,4 +29,8 @@ public class Supermarket {
         }
         return izbaceni;
     }
+
+    public int getBrojArtikala() {
+        return brojArtikala;
+    }
 }
