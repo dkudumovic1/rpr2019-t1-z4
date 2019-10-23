@@ -27,9 +27,9 @@ class SupermarketTest {
         supermarket.izbaciArtiklSaKodom("biciklo");
         assertEquals(0,supermarket.getBrojArtikala());
     }
-    /*@Test
-    void izbaciArtiklSaKodom() {
-        assertFalse(supermarket.izbaciArtiklSaKodom("biciklo"));
-    }*/
+    @Test
+    void izbaciArtiklSaKodom2() {
+        assertNull(supermarket.izbaciArtiklSaKodom("biciklo"));
+    }
 
 }

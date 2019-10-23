@@ -37,8 +37,8 @@ class KorpaTest {
         assertEquals(600,korpa.dajUkupnuCijenuArtikala());
     }
 
-    /*@Test
-    void izbaciArtiklSaKodom() {
-        assertFalse(korpa.izbaciArtiklSaKodom("biciklo"));
-    }*/
+    @Test
+    void izbaciArtiklSaKodom2() {
+        assertNull(korpa.izbaciArtiklSaKodom("biciklo"));
+    }
 }
